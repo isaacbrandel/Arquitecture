@@ -12,12 +12,8 @@ namespace Pantalla_Principal.web.Controllers
         // GET: Registration
         public ActionResult Index()
         {
-            var usuario = new RegistrationModel();
-            usuario.Nickname = "Mariale";
-            usuario.Name = "Alejandra";
-            usuario.Lastname = "Fajardo";
-            usuario.Correo = "Maryalecf@gmail.com";
-            return View(usuario);
+            
+            return View();
         }
     }
 }

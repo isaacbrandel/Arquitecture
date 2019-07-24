@@ -1,15 +1,34 @@
 ﻿@model Pantalla_Principal.web.Models.RegistrationModel
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Registro";
 }
 
 
-<h2>Index</h2>
+<h2>Bienvenidos aqui Podrán Registrarse</h2>
 
-<p>Nickname: </p><p>@Model.Nickname</p>
+@*<p>Nickname: </p><p>@Model.Nickname</p>
+    <input type="text" name="Nickname">*@
 
-<p>Nombre: </p><p>@Model.Name</p>
 
-<p>Apellido: </p><p>@Model.Lastname</p>
+ <form name="formulario" method="post" action="http://pagina.com/send.php">
+        <!-- Campo de entrada de datos -->
+        <input type="text" name="nombre" autocomplete="off"
+               placeholder="Nickname ">
+</form>
+<form name="formulario" method="post" action="http://pagina.com/send.php">
+    <!-- Campo de entrada de datos -->
+    <input type="text" name="nombre" autocomplete="off"
+           placeholder="Nombre">
+</form>
 
-<p>Correo Electronico: </p><p>@Model.Correo</p>
+<form name="formulario" method="post" action="http://pagina.com/send.php">
+    <!-- Campo de entrada de datos -->
+    <input type="text" name="nombre" autocomplete="off"
+           placeholder="Apellido">
+</form>
+<form name="formulario" method="post" action="http://pagina.com/send.php">
+    <!-- Campo de entrada de datos -->
+    <input type="text" name="nombre" autocomplete="off"
+           placeholder="Correo Electronico">
+</form>
+<input type="password" name="pass" placeholder="Contraseña">
