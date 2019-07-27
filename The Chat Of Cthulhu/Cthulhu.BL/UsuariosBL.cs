@@ -18,7 +18,7 @@ namespace Cthulhu.BL
             usuario.Correo = "Maryalecf@gmail.com";
             usuario.Pass= "hola";
             var ListaUsuarios = new List<Usuario>();
-
+            ListaUsuarios.Add(usuario);
             return ListaUsuarios;
         }
     }

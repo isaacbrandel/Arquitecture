@@ -7,15 +7,14 @@ using System.Web.Mvc;
 
 namespace Pantalla_Principal.web.Controllers
 {
-    public class RegistrationController : Controller
+    public class CateController : Controller
     {
-        // GET: Registration
+        // GET: Cate
         public ActionResult Index()
         {
-            var usuarioBL = new UsuariosBL();
-            var ListaUsuarios = usuarioBL.ObtenerUsuario();
-            
-            return View(ListaUsuarios);
+            var tagsBL = new TagsBL();
+            var ListaTags = tagsBL.Tags();
+            return View(ListaTags);
         }
     }
 }

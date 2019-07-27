@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cthulhu.BL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,12 @@ namespace Usuarios.win
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("hola mundo");
+            var TagsBL= new TagsBL();
+            var ListaTag = TagsBL.Tags();
+            foreach (var Categoria in ListaTag)
+            {
+                MessageBox.Show(Categoria.Nombre);
+            }
         }
     }
 }

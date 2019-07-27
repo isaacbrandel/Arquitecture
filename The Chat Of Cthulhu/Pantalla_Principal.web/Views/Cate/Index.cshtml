@@ -1,0 +1,14 @@
+﻿@model List<Cthulhu.BL.Tags>
+@{
+    ViewBag.Title = "Index";
+}
+<body style="background-color:#000000;">
+    <p style="color:#2A9055" ;></p>
+</body>
+
+<h2>Tags</h2>
+@foreach (var Tags in Model)
+{
+    <p>@Tags.Nombre</p>
+}
+

@@ -1,4 +1,4 @@
-﻿@model Pantalla_Principal.web.Models.RegistrationModel
+﻿@model List<Cthulhu.BL.Usuario>
 @{
     ViewBag.Title = "Registro";
 }
@@ -10,7 +10,7 @@
     <input type="text" name="Nickname">*@
 
 
- <form name="formulario" method="post" action="http://pagina.com/send.php">
+ @*<form name="formulario" method="post" action="http://pagina.com/send.php">
         <!-- Campo de entrada de datos -->
         <input type="text" name="nombre" autocomplete="off"
                placeholder="Nickname ">
@@ -31,4 +31,14 @@
     <input type="text" name="nombre" autocomplete="off"
            placeholder="Correo Electronico">
 </form>
-<input type="password" name="pass" placeholder="Contraseña">
+<input type="password" name="pass" placeholder="Contraseña">*@
+@foreach (var usuario in Model)
+{
+    <p>@usuario.Nickname</p>
+}
+<table>
+    <tr>
+        <td>Usuario 1</td>
+        <td> </td>
+    </tr>
+</table>
