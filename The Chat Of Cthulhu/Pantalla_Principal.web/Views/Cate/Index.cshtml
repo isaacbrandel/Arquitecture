@@ -6,9 +6,28 @@
     <p style="color:#2A9055" ;></p>
 </body>
 
-<h2>Tags</h2>
+@*<h2>Tags</h2>
 @foreach (var Tags in Model)
 {
     <p>@Tags.Nombre</p>
-}
+}*@
 
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>
+                Categorias
+            </th>
+        </tr>
+    </thead>
+    @foreach (var Tags in Model)
+    {
+
+    <tr>
+        <td>@Tags.Nombre</td>
+        <td></td>
+    </tr>
+     }
+   
+
+</table>>
